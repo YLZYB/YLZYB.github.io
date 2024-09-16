@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第一次大作业2</title>
+  </head>
+  <body>
+    <div>
+      <caption>
+        <span style="color: blue">欢迎注册会员</span>
+      </caption>
+    </div>
+    <div>
+      <form action="hw2.html" method="get">
+        <div>
+          手机号码:
+          <input
+            type="number"
+            name="pnum"
+            maxlength="11"
+            placeholder="11位手机号码"
+          />
+          <span style="color: red;">必填</span>
+          <br />
+          创建密码:
+          <input
+            type="passward"
+            name="pwd"
+            maxlength="8"
+            placeholder="8位密码"
+          /> 
+          <span style="color: red;">必填</span>
+          <br />
+          注册邮箱:
+          <input type="email" name="email" placeholder="例如:wustzz@sina.com" />
+          <span style="color: red;">必填</span>
+          <br />
+          验证码：
+          <input type="yz" name="yz" />
+        </div> 
+        <div>
+          性别：
+          <label>
+            <input type="radio" name="sex" value="male" checked="checked" />男
+          </label>
+          <label> <input type="radio" name="sex" value="female" /> 女 </label>
+        </div>
+        <div>
+          生日：
+          <input type="date" name="mydate" />
+        </div>
+        <div>
+          年龄：
+          <input />
+        </div>
+        <div>
+          籍贯：
+          <select name="capital">
+            <option value="0">江苏省</option>
+            <option value="1" selected="selected">湖北省</option>
+            <option value="2">湖南省</option>
+          </select>
+          <select name="city">
+            <option value="0">南京</option>
+            <option value="1" selected="selected">武汉</option>
+            <option value="2">长沙</option>
+          </select>
+          个人学历
+          <select name="degress">
+            <option value="0">专科</option>
+            <option value="1" selected="selected">本科</option>
+            <option value="2">研究生</option>
+          </select>
+        </div>
+        <div>
+          月薪:
+          <input
+            type="range"
+            id="score"
+            name="score"
+            min="0.0"
+            max="100.0"
+            step="0.5"
+            value="60.0"
+          />
+          <span id="msg"></span>
+        </div>
+        <div>
+          个人爱好:
+          <label>
+            <input type="checkbox" name="like" value="sing" />唱歌
+          </label>
+          <label> <input type="checkbox" name="like" value="run" />跑步 </label>
+          <label>
+            <input type="checkbox" name="like" value="swim" />游泳
+          </label>
+        </div>
+        <div>
+          个人照片：
+          <input type="file" id="test-image-file" name="test" />
+        </div>
+        <div>
+          个人简介：<br />
+          <textarea name="intro" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="提交" />
+          <input type="reset" value="重填" />
+        </div>
+      </form>
+    </div>
+    <script>
+      var msg = document.getElementById("msg");
+
+      window.onload = function () {
+        msg.innerHTML = document.getElementById("score").value;
+      };
+      document.getElementById("score").onchange = function () {
+        msg.innerHTML = this.value;
+      };
+    </script>
+  </body>
+</html>
