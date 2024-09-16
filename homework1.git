@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第一次大作业1</title>
+    <style>
+      .table {
+        font-family: 微软雅黑;
+        width:40%;
+        height: 400px;
+        border-collapse: collapse;
+      }
+      .table th,
+      .table td {
+        border: 1px solid rgb(0, 191, 255);
+      }
+      .table caption {
+        border: 1px solid black;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      .table th {
+        background-color: rgb(0, 191, 255);
+        color: #fff;
+        font-size: 1.1em;
+        text-align: left;
+        padding: 5px 7px;
+      }
+      .qm {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table class="table">
+        <caption>
+          应聘面试登记表
+        </caption>
+        <!-- <第一栏> -->
+        <div>
+          <tr>
+            <th colspan="7">基本信息</th>
+          </tr>
+
+          <tr>
+            <td>姓名</td>
+            <td>付涵</td>
+            <td>性别</td>
+            <td>男</td>
+            <td>出生日期</td>
+            <td>2005/11/20</td>
+            <td rowspan="5">
+              <img src="images/my.jpg" width="200px" height="280px" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>政治面貌</td>
+            <td>团员</td>
+            <td>籍贯</td>
+            <td>湖北孝感</td>
+            <td>民族</td>
+            <td>汉族</td>
+          </tr>
+
+          <tr>
+            <td>婚姻状况</td>
+            <td>未婚</td>
+            <td>学历</td>
+            <td>本科</td>
+            <td>专业</td>
+            <td>软件工程</td>
+          </tr>
+
+          <tr>
+            <td>联系电话</td>
+            <td colspan="2">193****5032</td>
+            <td>邮箱</td>
+            <td colspan="2">2338754963@qq.com</td>
+          </tr>
+
+          <tr>
+            <td>身份证号</td>
+            <td colspan="2">420984************</td>
+            <td>通讯地址</td>
+            <td colspan="2">瓦洛兰特亚海悬城</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">相关证书</td>
+            <td colspan="2">获取时间</td>
+            <td colspan="3">证书名称</td>
+            <td>发放单位</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">20xx.xx.xx</td>
+            <td colspan="3">武汉科技大学瓦乔杯冠军</td>
+            <td>武汉科技大学瓦乔杯</td>
+          </tr>
+        </div>
+        <!-- 第二栏 -->
+        <div>
+          <tr>
+            <th colspan="7">教育经历</th>
+          </tr>
+
+          <tr>
+            <td colspan="2">起止时间</td>
+            <td colspan="2">学校名称</td>
+            <td colspan="2">学历/专业</td>
+            <td>证明人</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">20xx.xx.xx-20xx.xx.xx</td>
+            <td colspan="2">武汉科技大学</td>
+            <td colspan="2">本科/软件工程</td>
+            <td>刘老师</td>
+          </tr>
+        </div>
+        <!-- <第三栏> -->
+        <div>
+          <tr>
+            <th colspan="7">工作经历</th>
+          </tr>
+
+          <tr>
+            <td colspan="2">起止时间</td>
+            <td colspan="2">公司名称</td>
+            <td colspan="2">部门/岗位</td>
+            <td>证明人</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">20xx.xx.xx-20xx.xx.xx</td>
+            <td colspan="2">大星有限公司</td>
+            <td colspan="2">软件设计</td>
+            <td>刘焯雄</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">20xx.xx.xx-20xx.xx.xx</td>
+            <td colspan="2">小星有限公司</td>
+            <td colspan="2">软件设计</td>
+            <td>曾琪</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">离职原因</td>
+            <td colspan="6">上班玩猿神</td>
+          </tr>
+
+          <tr>
+            <td colspan="6">上班又玩猿神</td>
+          </tr>
+        </div>
+        <!-- <第四栏> -->
+        <div>
+          <tr>
+            <th colspan="7">家庭信息</th>
+          </tr>
+
+          <tr>
+            <td>姓名</td>
+            <td>称谓</td>
+            <td>年龄</td>
+            <td colspan="3">工作单位</td>
+            <td>联系方式</td>
+          </tr>
+
+          <tr>
+            <td>付**</td>
+            <td>父子</td>
+            <td>55</td>
+            <td colspan="3">**********</td>
+            <td>**********</td>
+          </tr>
+
+          <tr>
+            <td>向**</td>
+            <td>母子</td>
+            <td>49</td>
+            <td colspan="3">**********</td>
+            <td>**********</td>
+          </tr>
+        </div>
+        <!-- <第五栏> -->
+        <div>
+          <tr>
+            <th colspan="7">录用情况</th>
+          </tr>
+
+          <tr>
+            <td>所属部门</td>
+            <td>职务</td>
+            <td>到岗时间</td>
+            <td>试用期薪资</td>
+            <td>转正薪资</td>
+            <td>上级领导</td>
+            <td>部门负责人</td>
+          </tr>
+
+          <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>人事经理意见</td>
+            <td colspan="3"></td>
+            <td>总经理意见</td>
+            <td colspan="3"></td>
+          </tr>
+        </div>
+      </table>
+    </div>
+    <div>
+      <form>
+        是否因违法犯罪受过处理:
+        <input type="radio" name="YN" value="Yes" checked="checked" />是
+        <input type="radio" name="YN" value="No" />否
+        <br />
+        是否有数额过万的未清偿债务:
+        <input type="radio" name="Money" value="Yes" checked="checked" />是
+        <input type="radio" name="Money" value="No" />否
+      </form>
+    </div>
+    <div>
+      <p>
+        本人承诺以上信息均为真实有效，如若造假或情况不实，自愿承担一切后果。
+      </p>
+      <p class="qm">
+        本人签名： <br />
+        日期：
+      </p>
+    </div>
+  </body>
+</html>
 
